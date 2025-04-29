@@ -3,9 +3,11 @@
 Este projeto foi desenvolvido como parte de uma atividade prática para representar a interface gráfica de um ohmímetro, utilizando um display OLED modelo SSD1306.
 
 📋 Objetivo
+
 O principal objetivo foi aplicar os conhecimentos em sistemas embarcados para criar uma interface visual simples, mas funcional, que simula a leitura de um resistor. A proposta inclui elementos gráficos e textuais que poderiam estar presentes em um dispositivo real.
 
 🛠️ O que foi feito
+
 Inicialização e configuração do display OLED via protocolo I2C.
 
 Criação de funções para desenhar formas básicas como linhas, quadrados e retângulos.
@@ -17,6 +19,7 @@ Desenho de uma moldura e elementos gráficos simulando um resistor eletrônico.
 Exibição de informações como o nome "OHMIMETRO", o valor de resistência e um botão de "MEDIR".
 
 🔍 Como funciona
+
 O programa inicializa o display e preenche a tela com um layout pré-definido:
 
 Um cabeçalho com o nome do projeto.
@@ -32,6 +35,7 @@ Um rodapé com o botão "MEDIR".
 Todos os elementos são desenhados pixel a pixel usando uma biblioteca própria com base na manipulação do buffer interno do display.
 
 📦 Utilidade
+
 Apesar de ser uma simulação, esse projeto ajuda a entender:
 
 Como escrever e posicionar textos e formas em um display gráfico.
