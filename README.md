@@ -2,6 +2,11 @@
 
 Este projeto tem como objetivo simular a interface gráfica de um ohmímetro em um display OLED SSD1306. A ideia foi explorar os recursos gráficos do display, desenvolver noções de design de interface em sistemas embarcados e montar uma base que pode futuramente evoluir para um instrumento funcional.
 
+# Link Para o Vídeo
+
+https://drive.google.com/file/d/1FyAI32r9RjHy5lJgsVOtWQBN0jtRF-E_/view?usp=sharing
+
+
 # 📌 Objetivo
 
 
