@@ -1,45 +1,47 @@
 # Ohmimetro BitDogLab
 
-Este projeto foi desenvolvido como parte de uma atividade prática para representar a interface gráfica de um ohmímetro, utilizando um display OLED modelo SSD1306.
+Este projeto tem como objetivo simular a interface gráfica de um ohmímetro em um display OLED SSD1306. A ideia foi explorar os recursos gráficos do display, desenvolver noções de design de interface em sistemas embarcados e montar uma base que pode futuramente evoluir para um instrumento funcional.
 
-📋 Objetivo
+📌 Objetivo
 
-O principal objetivo foi aplicar os conhecimentos em sistemas embarcados para criar uma interface visual simples, mas funcional, que simula a leitura de um resistor. A proposta inclui elementos gráficos e textuais que poderiam estar presentes em um dispositivo real.
 
-🛠️ O que foi feito
+Criar a representação gráfica de um ohmímetro simples usando um display OLED.
 
-Inicialização e configuração do display OLED via protocolo I2C.
+Simular a interface de medição de resistência elétrica (valor simbólico).
 
-Criação de funções para desenhar formas básicas como linhas, quadrados e retângulos.
+Aprender e praticar a manipulação direta de pixels com a biblioteca do SSD1306.
 
-Implementação de escrita de texto em dois modos: normal e em escala ampliada.
+Desenvolver uma interface intuitiva com aparência de produto real.
 
-Desenho de uma moldura e elementos gráficos simulando um resistor eletrônico.
 
-Exibição de informações como o nome "OHMIMETRO", o valor de resistência e um botão de "MEDIR".
+🧰 O que foi feito
 
-🔍 Como funciona
 
-O programa inicializa o display e preenche a tela com um layout pré-definido:
+Título na parte superior: Exibição centralizada da palavra “OHMIMETRO”, com destaque.
 
-Um cabeçalho com o nome do projeto.
+Linha divisória: Uma linha horizontal foi desenhada abaixo do título para organizar visualmente o conteúdo.
 
-Uma linha decorativa separando o cabeçalho do corpo.
+Desenho de resistor: Um retângulo representando o corpo do resistor e três linhas verticais (faixas coloridas simbólicas) simulando as faixas de valor.
 
-Texto indicando o valor de resistência simulada.
+Valor da resistência: Texto com o valor “330 Ω” posicionado ao lado do resistor para indicar a leitura simulada.
 
-Um desenho representando um resistor com três faixas.
+Botão "MEDIR": Um retângulo com o texto “MEDIR” simulando um botão de ação na parte inferior da tela.
 
-Um rodapé com o botão "MEDIR".
 
-Todos os elementos são desenhados pixel a pixel usando uma biblioteca própria com base na manipulação do buffer interno do display.
+🛠️ Como foi feito
 
-📦 Utilidade
 
-Apesar de ser uma simulação, esse projeto ajuda a entender:
+Utilização da biblioteca do SSD1306 com funções para desenhar linhas, caixas e texto diretamente no buffer de pixels.
 
-Como escrever e posicionar textos e formas em um display gráfico.
+O projeto foi implementado de forma que cada elemento gráfico foi posicionado cuidadosamente para se adequar à resolução do display (128x64).
 
-Como organizar uma interface simples e limpa em um dispositivo com espaço limitado.
+A comunicação com o display foi feita por meio da simulação no Wokwi, uma plataforma online para prototipagem de projetos embarcados.
 
-Como estruturar o código para facilitar atualizações e futuras expansões, como leitura real de sensores.
+📋 Utilidade e aplicabilidade
+
+
+Didática: Ótimo exemplo para iniciantes em eletrônica e programação embarcada entenderem como construir interfaces gráficas simples.
+
+Base para expansão: Com pequenas modificações, é possível incluir medições reais de resistência usando o conversor analógico-digital da placa.
+
+Prototipagem rápida: Ajuda a planejar visualmente como será um instrumento real, antes de adicionar componentes físicos ou lógicas complexas.
